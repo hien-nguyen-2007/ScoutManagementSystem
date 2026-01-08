@@ -1,4 +1,4 @@
-package Objects;
+package objects;
 
 import java.util.ArrayList;
 
@@ -15,15 +15,6 @@ public class Parent {
         this.firstName = firstName;
         this.lastName = lastName;
         this.scouts = scouts;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-
-    }
-
-    public Parent(String name, String firstName, String lastName, String email, int phoneNumber) {
-        this.name = name;
-        this.firstName = firstName;
-        this.lastName = lastName;
         this.email = email;
         this.phoneNumber = phoneNumber;
     }

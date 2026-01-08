@@ -1,4 +1,4 @@
-package Objects;
+package objects;
 
 import java.util.Date;
 
@@ -23,4 +23,8 @@ public class Rank {
 
     private Date date;
 
+    public Rank(String name, Date date) {
+        this.name = name;
+        this.date = date;
+    }
 }
