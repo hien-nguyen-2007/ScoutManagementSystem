@@ -82,6 +82,7 @@ public class Main {
             System.out.print("Would you like to enter a Scout? (y/n) ");
             input = scanner.next();
         }
+        System.out.println();
 
         for (Scout scout: scouts) {
             System.out.println(scout);
