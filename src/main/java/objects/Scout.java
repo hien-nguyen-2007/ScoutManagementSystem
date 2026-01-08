@@ -19,9 +19,9 @@ public class Scout {
     private int unit;
     private Date dateJoined;
     private String email;
-    private int phoneNumber = 1111111111;
+    private long phoneNumber = 1111111111;
 
-    public Scout(String name, String firstName, String lastName, int age, Date birthday, Rank rank, String patrol, boolean totinChip, boolean firemnChit, String position, ArrayList<Rank> rankHistory, ArrayList<Parent> parent, int unit, Date dateJoined, String email, int phoneNumber) {
+    public Scout(String name, String firstName, String lastName, int age, Date birthday, Rank rank, String patrol, int unit, Date dateJoined, String email, long phoneNumber) {
         this.name = name;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -29,22 +29,17 @@ public class Scout {
         this.birthday = birthday;
         this.rank = rank;
         this.patrol = patrol;
-        this.totinChip = totinChip;
-        this.firemnChit = firemnChit;
-        this.position = position;
-        this.rankHistory = rankHistory;
-        this.parent = parent;
         this.unit = unit;
         this.dateJoined = dateJoined;
         this.email = email;
         this.phoneNumber = phoneNumber;
     }
 
-    public int getPhoneNumber() {
+    public long getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(long phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
