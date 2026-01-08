@@ -171,4 +171,9 @@ public class Scout {
         this.dateJoined = dateJoined;
     }
 
+    @Override
+    public String toString() {
+        return name + ", " + rank + ", " + patrol + ", " + unit;
+    }
+
 }
