@@ -42,6 +42,6 @@ public class Camp {
 
     @Override
     public String toString() {
-        return this.name + ": " + nights + " nights"
+        return this.name + ": " + nights + " nights";
     }
 }
