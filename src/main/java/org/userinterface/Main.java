@@ -9,14 +9,25 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+
+    private static ArrayList<Scout> scouts = new ArrayList<>();
+
     public static void main(String[] args) {
-        ArrayList<Scout> scouts = new ArrayList<>();
 
         Scanner scanner = new Scanner(System.in);
+        addScouts(scanner);
 
+        displayScouts();
+    }
+
+    public static void displayScouts() {
+        for (Scout scout: scouts) {
+            System.out.println(scout);
+        }
+    }
+
+    public static void addScouts(Scanner scanner) {
         System.out.print("Would you like to enter a Scout? (y/n) ");
         String input = scanner.next();
         while (input.equals("y")) {
@@ -83,9 +94,5 @@ public class Main {
             input = scanner.next();
         }
         System.out.println();
-
-        for (Scout scout: scouts) {
-            System.out.println(scout);
-        }
     }
 }
