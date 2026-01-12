@@ -1,11 +1,12 @@
 package objects;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Camp {
     private String name;
     private int nights;
-    private ArrayList<Scout> scouts = new ArrayList<>();
+    private List<Scout> scouts = new ArrayList<>();
 
     public Camp(String name, int nights) {
         this.name = name;
@@ -28,7 +29,7 @@ public class Camp {
         this.nights = nights;
     }
 
-    public ArrayList<Scout> getScouts() {
+    public List<Scout> getScouts() {
         return scouts;
     }
 

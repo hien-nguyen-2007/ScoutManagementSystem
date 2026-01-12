@@ -2,30 +2,29 @@ package objects;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Scout {
     private String name;
     private String firstName;
     private String lastName;
-    private int age;
     private Date birthday;
     private Rank rank;
     private String patrol;
     private boolean totinChip = false;
     private boolean firemnChit = false;
     private String position = "Patrol member";
-    private ArrayList<Rank> rankHistory = new ArrayList<>();
-    private ArrayList<Parent> parent = new ArrayList<>();
+    private List<Rank> rankHistory = new ArrayList<>();
+    private List<Parent> parents = new ArrayList<>();
     private int unit;
     private Date dateJoined;
     private String email;
     private long phoneNumber = 1111111111;
 
-    public Scout(String name, String firstName, String lastName, int age, Date birthday, Rank rank, String patrol, int unit, Date dateJoined, String email, long phoneNumber) {
+    public Scout(String name, String firstName, String lastName, Date birthday, Rank rank, String patrol, int unit, Date dateJoined, String email, long phoneNumber) {
         this.name = name;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.age = age;
         this.birthday = birthday;
         this.rank = rank;
         this.patrol = patrol;
@@ -73,14 +72,6 @@ public class Scout {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 
     public Date getBirthday() {
@@ -131,28 +122,28 @@ public class Scout {
         this.position = position;
     }
 
-    public ArrayList<Rank> getRankHistory() {
+    public List<Rank> getRankHistory() {
         return rankHistory;
     }
 
-    public void setRankHistory(ArrayList<Rank> rankHistory) {
+    public void setRankHistory(List<Rank> rankHistory) {
         this.rankHistory = rankHistory;
     }
 
-    public ArrayList<Parent> getParent() {
-        return parent;
+    public List<Parent> getParent() {
+        return parents;
     }
 
-    public void setParent(ArrayList<Parent> parent) {
-        this.parent = parent;
+    public void setParent(List<Parent> parent) {
+        this.parents = parent;
     }
 
     public void addParent(Parent parent) {
-        this.parent.add(parent);
+        this.parents.add(parent);
     }
 
     public void removeParent(Parent parent) {
-        this.parent.remove(parent);
+        this.parents.remove(parent);
     }
 
     public int getUnit() {

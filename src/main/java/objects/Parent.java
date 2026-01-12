@@ -1,16 +1,17 @@
 package objects;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Parent {
     private String name;
     private String firstName;
     private String lastName;
-    private ArrayList<Scout> scouts = new ArrayList<>();
+    private List<Scout> scouts = new ArrayList<>();
     private String email;
     private int phoneNumber = 1111111111;
 
-    public Parent(String name, String firstName, String lastName, ArrayList<Scout> scouts, String email, int phoneNumber) {
+    public Parent(String name, String firstName, String lastName, List<Scout> scouts, String email, int phoneNumber) {
         this.name = name;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -43,7 +44,7 @@ public class Parent {
         this.lastName = lastName;
     }
 
-    public ArrayList<Scout> getScouts() {
+    public List<Scout> getScouts() {
         return scouts;
     }
 
