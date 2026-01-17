@@ -1,7 +1,7 @@
-package org.userinterface;
+package userinterface;
 
-import objects.Rank;
-import objects.Scout;
+import domain.Rank;
+import domain.Scout;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

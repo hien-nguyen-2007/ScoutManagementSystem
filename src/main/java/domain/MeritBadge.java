@@ -1,4 +1,4 @@
-package objects;
+package domain;
 
 public class MeritBadge {
     private String name;
