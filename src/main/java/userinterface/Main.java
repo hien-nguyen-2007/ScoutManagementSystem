@@ -85,7 +85,7 @@ public class Main {
             long phoneNumber = scanner.nextLong();
             System.out.println();
 
-            Scout scout = new Scout(name, firstName, lastName, birthday, rank, patrol, unit, dateJoined, email, phoneNumber);
+            Scout scout = new Scout(firstName, lastName, birthday, rank, patrol, unit, dateJoined, email, phoneNumber);
             scouts.add(scout);
 
             System.out.print("Would you like to enter a Scout? (y/n) ");

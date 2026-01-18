@@ -5,7 +5,6 @@ import java.util.Date;
 import java.util.List;
 
 public class Scout {
-    private String name;
     private String firstName;
     private String lastName;
     private Date birthday;
@@ -21,8 +20,7 @@ public class Scout {
     private String email;
     private long phoneNumber = 1111111111;
 
-    public Scout(String name, String firstName, String lastName, Date birthday, Rank rank, String patrol, int unit, Date dateJoined, String email, long phoneNumber) {
-        this.name = name;
+    public Scout(String firstName, String lastName, Date birthday, Rank rank, String patrol, int unit, Date dateJoined, String email, long phoneNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthday = birthday;
@@ -51,11 +49,12 @@ public class Scout {
     }
 
     public String getName() {
-        return name;
+        return this.firstName + " " + this.lastName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     public String getFirstName() {
@@ -164,7 +163,7 @@ public class Scout {
 
     @Override
     public String toString() {
-        return name + ", " + rank + ", " + patrol + ", " + unit;
+        return getName() + ", " + rank + ", " + patrol + ", " + unit;
     }
 
 }
