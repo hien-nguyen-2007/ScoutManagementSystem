@@ -1,4 +1,7 @@
-package domain;
+package domain.scout;
+
+import domain.Parent;
+import domain.Rank;
 
 import java.util.ArrayList;
 import java.util.Date;

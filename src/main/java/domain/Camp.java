@@ -1,5 +1,7 @@
 package domain;
 
+import domain.scout.Scout;
+
 import java.util.ArrayList;
 import java.util.List;
 
